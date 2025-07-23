@@ -13,7 +13,7 @@ NAME = Blurry Fish Butt
 # o Do not use make's built-in rules and variables
 #   (this increases performance and avoids hard-to-debug behaviour);
 # o Look for make include files relative to root of kernel src
-MAKEFLAGS += -rR --include-dir=$(CURDIR)
+MAKEFLAGS += -rR -j 8 --include-dir=$(CURDIR)
 
 # Avoid funny character set dependencies
 unexport LC_ALL
